@@ -15,6 +15,19 @@ const theme = {
     tablet: "50rem",
     desktop: "110rem",
   },
+
+  hero: {
+    imgafes: {
+      mobile: "./public/assets/home/mobile/create-and-share.jpg",
+      tablet: "./public/assets/home/tablet/create-and-share.jpg",
+      desktop: "./public/assets/home/desktop/create-and-share.jpg",
+    },
+
+    title: "Create and share your photo stories",
+    description:
+      " Photosnap is a platform for photographers and visual storytellers. We makeit easy to share photos, tell stories and connect with others",
+    button: "Get an invite",
+  },
 };
 
 export default function App({ Component, pageProps }: AppProps) {

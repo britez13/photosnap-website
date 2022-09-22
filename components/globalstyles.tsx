@@ -1,6 +1,10 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+  * {
+    box-sizing: border-box;
+  }
+
   html {
   font-size: 62.5%
   }
@@ -11,6 +15,8 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     font-family: 'DM Sans', sans-serif;
+    width: min(100%, 144rem);
+    margin-inline: auto;
   }
 
   a {
@@ -18,8 +24,17 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
   }
 
-  * {
-    box-sizing: border-box;
+  h1, h2, h3, h4, ul {
+    margin: 0;
+  }
+
+  
+  ul {
+   padding: 0;
+  }  
+
+  li {
+    list-style: none;
   }
 `;
 

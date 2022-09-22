@@ -41,14 +41,17 @@ const Description = styled.p`
   line-height: 1.5;
   font-size: 1.5rem;
 `
-const CodeTag = styled.code`
-  background: #fafafa;
-  border-radius: 5px;
-  margin: 0 0.75rem;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-`
 
-export { Container, Main, Title, Description, CodeTag }
+const Button = styled.a`
+  font-size: 1.2rem;
+  font-size: 700;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+`;
+
+export { Container, Main, Title, Description, Button }
