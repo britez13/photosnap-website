@@ -24,10 +24,20 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
   }
 
-  h1, h2, h3, h4, ul {
+  h1, h2, h3, h4, ul, p {
     margin: 0;
   }
 
+  
+  
+  
+  h1, h2, h3 {
+    font-weight: 700;
+  }
+
+  p {
+    font-weight: 400;
+  }
   
   ul {
    padding: 0;

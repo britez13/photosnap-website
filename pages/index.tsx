@@ -7,10 +7,7 @@ import {
 } from "../components/sharedstyles";
 import Cards from "../components/cards";
 import GridHero from "../components/GridHero";
-import StoriesList from "../components/StoriesList"
-
-
-
+import StoriesList from "../components/StoriesList";
 
 export default function Home() {
   return (
@@ -38,6 +35,8 @@ export default function Home() {
       {/* <GridHero /> */}
 
       <StoriesList />
+
+      <FeaturesList />
 
     </>
   );
