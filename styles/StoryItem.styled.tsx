@@ -23,6 +23,7 @@ const StoryItemStyle: any = styled.div`
     justify-content: flex-end;
     padding: 0 4rem 5rem;
     gap: 1rem;
+    transition: translate ease 300ms;
 
     h3 {
       font-size: 1.8rem;
@@ -66,6 +67,15 @@ const StoryItemStyle: any = styled.div`
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     height: 50rem;
     background-size: fill;
+
+    &:hover {
+      cursor: pointer;
+      transform: translateY(-2rem);
+
+    
+    }
+
+
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {

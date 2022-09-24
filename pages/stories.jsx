@@ -1,8 +1,9 @@
 
+import StoriesList from "../components/StoriesList";
 
 const Stories = () => {
   return (
-    <div>stories</div>
+    <StoriesList />
   )
 }
 

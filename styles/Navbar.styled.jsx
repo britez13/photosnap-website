@@ -12,7 +12,6 @@ const NavbarStyle = styled.nav`
       justify-content: center;
       align-items: center;
       gap: 5rem;
-      padding-top: .7rem;
 
       & a {
         font-size: 1.2rem;

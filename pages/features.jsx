@@ -1,5 +1,11 @@
+
+import FeaturesList from "../components/FeaturesList";
+
 const Features = () => {
-  return <div>features</div>;
+  return (
+  <>
+    <FeaturesList />
+  </>);
 };
 
 export default Features;
