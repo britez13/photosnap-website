@@ -23,7 +23,7 @@ const StoryItemStyle: any = styled.div`
     justify-content: flex-end;
     padding: 0 4rem 5rem;
     gap: 1rem;
-    transition: translate ease 300ms;
+    transition: translate 50ms ease;
 
     h3 {
       font-size: 1.8rem;

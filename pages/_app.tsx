@@ -27,8 +27,49 @@ const theme: any = {
     title: "Create and share your photo stories.",
     description:
       " Photosnap is a platform for photographers and visual storytellers. We makeit easy to share photos, tell stories and connect with others",
-
   },
+
+  homeGrid: [
+    {
+      images: {
+        mobile: "/assets/home/mobile/beautiful-stories.jpg",
+        tablet: "/assets/home/tablet/beautiful-stories.jpg",
+        desktop: "/assets/home/desktop/beautiful-stories.jpg",
+      },
+
+      title: "Beautiful stories every time",
+      description:
+        "We provide design templates to ensure your stories look terrific. Easily add photos, text, embed maps and media from other networks. Then share your story with everyone.",
+    },
+
+    {
+      images: {
+        mobile: "/assets/home/mobile/designed-for-everyone.jpg",
+        tablet: "/assets/home/tablet/designed-for-everyone.jpg",
+        desktop: "/assets/home/desktop/designed-for-everyone.jpg",
+      },
+
+      title: "Designed for everyone",
+      description:
+        "Photosnap can help you create stories that resonate with your audience. Our tool is designed for photographers of all levels, brands, businesses you name it.",
+    },
+  ],
+
+  storiesHero: [
+    {
+      images: {
+        mobile: "/assets/stories/mobile/moon-of-appalacia.jpg",
+        tablet: "/assets/stories/tablet/moon-of-appalacia.jpg",
+        desktop: "/assets/stories/desktop/moon-of-appalacia.jpg",
+      },
+
+      subtitle: "Last month's featured story",
+      title: "Hazy full moon of Appalachia",
+      date: "March 2nd 2020",
+      author: "John Appleseed",
+      description: 'The dissected plateau area, while not actually made up of geological mountains, is popularly called "mountains", especially in eastern Kentucky and West Virginia, and while the ridges are not high, the terrain is extremely rugged.',
+    },
+  ],
 
   stories: [
     {
@@ -243,7 +284,8 @@ const theme: any = {
     {
       image: "/assets/features/desktop/drag-drop.svg",
       title: "Drag & Drop Image",
-      description: "Easily drag and drop your image and get beautiful shots everytime. No over the top tooling to add friction to creating stories.",
+      description:
+        "Easily drag and drop your image and get beautiful shots everytime. No over the top tooling to add friction to creating stories.",
     },
   ],
 };

@@ -1,10 +1,13 @@
-
+import StoriesHero from "../components/StoriesHero";
 import StoriesList from "../components/StoriesList";
 
 const Stories = () => {
   return (
-    <StoriesList />
-  )
-}
+    <>
+      <StoriesHero />
+      <StoriesList />
+    </>
+  );
+};
 
 export default Stories;

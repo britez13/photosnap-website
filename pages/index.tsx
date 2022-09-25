@@ -9,6 +9,7 @@ import Cards from "../components/cards";
 import StoriesList from "../components/StoriesList";
 import FeaturesList from "../components/FeaturesList";
 import HomeHero from "../components/HomeHero";
+import HomeGrid from "../components/HomeGrid";
 
 export default function Home() {
   return (
@@ -36,7 +37,7 @@ export default function Home() {
       {/* <GridHero /> */}
 
       <HomeHero />
-
+      <HomeGrid />
       <StoriesList />
 
       <FeaturesList />

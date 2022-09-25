@@ -60,6 +60,16 @@ const Button = styled.a`
   cursor: pointer;
 `;
 
+
+const ButtonWhite = styled.a`
+  color: ${({ theme }) => theme.colors.white};
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+`; 
+
+
 const Title = styled.h1`
   font-size: 3.2rem;
   color: ${({ theme }) => theme.colors.white};
@@ -85,4 +95,4 @@ const Description = styled.p`
 `;
 
 
-export { Container, Main, Title, Description, Button }
+export { Container, Main, Title, Description, Button, ButtonWhite}
