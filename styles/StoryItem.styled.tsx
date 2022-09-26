@@ -33,35 +33,29 @@ const StoryItemStyle: any = styled.div`
       font-size: 1.3rem;
     }
 
-    
-    &> span {
-      margin-top: .5rem;
+    & > span {
+      margin-top: 0.5rem;
       width: 100%;
       height: 1px;
       background-color: #fff;
       opacity: 0.25;
     }
 
-    
     div {
       margin-top: 1rem;
+    }
 
-    }  
-
-    
     .link-wrapper {
       display: flex;
       justify-content: space-between;
       align-items: center;
 
-      span { 
+      span {
         font-size: 1.2rem;
         text-transform: uppercase;
         letter-spacing: 0.2rem;
       }
     }
-
-
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
@@ -71,11 +65,7 @@ const StoryItemStyle: any = styled.div`
     &:hover {
       cursor: pointer;
       transform: translateY(-2rem);
-
-    
     }
-
-
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {

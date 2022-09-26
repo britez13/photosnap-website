@@ -6,7 +6,7 @@ const FeaturesListStyle = styled.section`
   grid-template-columns: 1fr;
   justify-items: center;
   margin-inline: auto;
-  margin-top: 8rem;
+  margin-block: 8rem;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     grid-template-columns: repeat(2, 1fr);
@@ -15,7 +15,6 @@ const FeaturesListStyle = styled.section`
 
   @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 7rem;
   }
 `;
 

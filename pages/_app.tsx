@@ -4,6 +4,7 @@ import { ThemeProvider } from "styled-components";
 import Layout from "../components/Layout";
 import Header from "../components/Header";
 import GlobalStyle from "../components/globalstyles";
+import Footer from "../components/Footer";
 
 const theme: any = {
   colors: {
@@ -67,7 +68,34 @@ const theme: any = {
       title: "Hazy full moon of Appalachia",
       date: "March 2nd 2020",
       author: "John Appleseed",
-      description: 'The dissected plateau area, while not actually made up of geological mountains, is popularly called "mountains", especially in eastern Kentucky and West Virginia, and while the ridges are not high, the terrain is extremely rugged.',
+      description:
+        'The dissected plateau area, while not actually made up of geological mountains, is popularly called "mountains", especially in eastern Kentucky and West Virginia, and while the ridges are not high, the terrain is extremely rugged.',
+    },
+  ],
+
+  sharedHero: [
+    {
+      images: {
+        mobile: "/assets/features/mobile/hero.jpg",
+        tablet: "/assets/features/tablet/hero.jpg",
+        desktop: "/assets/features/desktop/hero.jpg",
+      },
+
+      title: "Features",
+      description:
+        "We make sure all of our features are designed to be loved by every aspiring and even professional photograpers who wanted to share their stories.",
+    },
+
+    {
+      images: {
+        mobile: "/assets/pricing/mobile/hero.jpg",
+        tablet: "/assets/pricing/tablet/hero.jpg",
+        desktop: "/assets/pricing/desktop/hero.jpg",
+      },
+
+      title: "Pricing",
+      description:
+        "Create a your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos.",
     },
   ],
 
@@ -286,6 +314,17 @@ const theme: any = {
       title: "Drag & Drop Image",
       description:
         "Easily drag and drop your image and get beautiful shots everytime. No over the top tooling to add friction to creating stories.",
+    },
+  ],
+
+  betaSection: [
+    {
+      images: {
+        mobile: "/assets/shared/mobile/bg-beta.jpg",
+        tablet: "/assets/shared/tablet/bg-beta.jpg",
+        desktop: "/assets/shared/desktop/bg-beta.jpg",
+      },
+      title: "We’re in beta. Get your invite today!",
     },
   ],
 };

@@ -10,8 +10,14 @@ import StoriesList from "../components/StoriesList";
 import FeaturesList from "../components/FeaturesList";
 import HomeHero from "../components/HomeHero";
 import HomeGrid from "../components/HomeGrid";
+import { useContext } from "react";
+import { DataContext } from "./_app";
 
 export default function Home() {
+  const value = useContext(DataContext);
+  const stories = value.stories.slice(0, 4);
+  const features = value.features.slice(0, 3);
+
   return (
     <>
       <Head>
@@ -38,9 +44,8 @@ export default function Home() {
 
       <HomeHero />
       <HomeGrid />
-      <StoriesList />
-
-      <FeaturesList />
+      <StoriesList stories={stories} />
+      <FeaturesList features={features} />
     </>
   );
 }

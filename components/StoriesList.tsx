@@ -4,15 +4,11 @@ import { DataContext } from "../pages/_app";
 import StoriesListStyle from "../styles/StoriesList.styled";
 import StoryItem from "./StoryItem";
 
-const StoriesList: any = () => {
-  const value = useContext(DataContext);
-  const stories = value.stories
-
-  console.log(value);
+const StoriesList: any = ({ stories }) => {
 
   return (
     <StoriesListStyle>
-      {stories.map(story => (
+      {stories.map((story) => (
         <StoryItem key={story.title} story={story}></StoryItem>
       ))}
     </StoriesListStyle>
