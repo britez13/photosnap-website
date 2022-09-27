@@ -1,20 +1,20 @@
 import { useContext } from "react";
 import { DataContext } from "../pages/_app";
 import HomeGridStyle from "../styles/HomeGrid.styled";
-import HomeGridItem from "./HomeGridItem";
-import { Description } from "./sharedstyles";
+import Grid1 from "./Grid1";
+import Grid2 from "./Grid2";
 
-const HomeGrid = () => {
-  const value = useContext(DataContext);
-  const homeGrid = value.homeGrid;
-
+const HomeGrid = ({homeGrid}) => {
+  console.log(homeGrid);
+  
   return (
     <HomeGridStyle>
-      {homeGrid.map((item) => {
-        return <HomeGridItem key={item.title} item={item} />;
-      })}
+      <Grid1 gridInfo={homeGrid[0]} />
+      <Grid2 gridInfo={homeGrid[1]} />
     </HomeGridStyle>
   );
-};
+  };
 
 export default HomeGrid;
+
+

@@ -85,6 +85,20 @@ const Title = styled.h1`
 
 `;
 
+const TitleBlack = styled.h2`
+  font-size: 3.2rem;
+  color: ${({ theme }) => theme.colors.black};
+  letter-spacing: 0.33rem;
+  line-height: 4rem;
+  text-transform: uppercase;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    font-size: 4rem;
+    letter-spacing: 0.417rem;
+    line-height: 4.8rem;
+  }
+`;
+
 const Description = styled.p`
   font-size: 1.5rem;
   line-height: 2.5rem;
@@ -92,6 +106,14 @@ const Description = styled.p`
   mix-blend-mode: normal;
   opacity: 0.6;
 
+`;
+
+const DescriptionBlack = styled.p`
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: ${({ theme }) => theme.colors.black};
+  mix-blend-mode: normal;
+  opacity: 0.6;
 `;
 
 const SharedHeroStyle = styled.section`
@@ -188,4 +210,4 @@ const BetaSectionStyle = styled.section`
 `;
 
 
-export { Container, Main, Title, Description, Button, ButtonWhite, SharedHeroStyle, BetaSectionStyle}
+export { Container, Main, Title, TitleBlack, Description, DescriptionBlack, Button, ButtonWhite, SharedHeroStyle, BetaSectionStyle}

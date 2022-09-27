@@ -15,6 +15,7 @@ import { DataContext } from "./_app";
 
 export default function Home() {
   const value = useContext(DataContext);
+  const homeGrid = value.homeGrid;
   const stories = value.stories.slice(0, 4);
   const features = value.features.slice(0, 3);
 
@@ -43,7 +44,7 @@ export default function Home() {
       {/* <GridHero /> */}
 
       <HomeHero />
-      <HomeGrid />
+      <HomeGrid homeGrid={homeGrid} />
       <StoriesList stories={stories} />
       <FeaturesList features={features} />
     </>

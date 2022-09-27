@@ -29,6 +29,9 @@ const HomeHeroStyle = styled.section`
 
       div {
         max-width: 39.7rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
       }
     }
 
