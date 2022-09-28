@@ -138,6 +138,7 @@ const SharedHeroStyle = styled.section`
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
+    padding-inline: auto;
   }
 
 
@@ -155,7 +156,6 @@ const SharedHeroStyle = styled.section`
       grid-row: 1/2;
     }
 
-    
     .wrapper {
       max-width: 38.7rem;
     }
