@@ -47,6 +47,13 @@ const HomeHeroStyle = styled.section`
     .info {
       grid-column: 1/4;
       padding-left: 10rem;
+      position: relative;
+
+      &::before {
+        position: absolute;
+      }
+
+
     }
 
     .hero {

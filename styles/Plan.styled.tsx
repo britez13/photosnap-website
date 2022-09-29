@@ -1,9 +1,15 @@
 import styled from "styled-components";
 
 const PlanStyle = styled.section`
+  max-width: min(90%, 110rem);
+  margin-inline: auto;
   margin-block: 5rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  color: black;
 
   .first-wrapper {
     color: ${({ theme }) => theme.colors.black};
@@ -49,6 +55,204 @@ const PlanStyle = styled.section`
         background-color: white;
         transform: translateX(-100%);
         left: calc(100% - 1.9px);
+      }
+    }
+  }
+
+  .second-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+      flex-direction: row;
+    }
+  }
+
+  .item {
+    background-color: ${({ theme }) => theme.colors.grey};
+    min-height: 40.7rem;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    gap: 3rem;
+    padding-inline: 2rem;
+
+    h2,
+    p {
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2.4rem;
+    }
+
+    p {
+      margin-top: 2rem;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      mix-blend-mode: normal;
+      opacity: 0.6;
+    }
+
+    .price {
+      h2 {
+        font-size: 4rem;
+        letter-spacing: 0.41rem;
+        text-transform: uppercase;
+      }
+
+      p {
+        margin-top: 0rem;
+      }
+    }
+
+    a {
+      padding: 1.5rem;
+      background-color: black;
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      width: 100%;
+    }
+
+    @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
+      gap-row: 1rem;
+      min-height: 27rem;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      align-self: center;
+      padding-inline: 5rem;
+      justify-items: end;
+
+      h2,
+      p {
+        text-align: start;
+      }
+
+      .price {
+        p {
+          text-align: end;
+          padding-right: 0.5rem;
+        }
+      }
+    }
+
+    @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+      gap-row: 1rem;
+      min-height: 40.7rem;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      align-self: center;
+      padding-inline: 5rem;
+      justify-items: center;
+
+      h2,
+      p {
+        text-align: center;
+      }
+
+      .price {
+        p {
+          text-align: center;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  .pro {
+    background-color: ${({ theme }) => theme.colors.black};
+    min-height: 40.7rem;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    gap: 3rem;
+    padding-inline: 2rem;
+    color: white;
+
+    h2,
+    p {
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2.4rem;
+    }
+
+    p {
+      margin-top: 2rem;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      mix-blend-mode: normal;
+      opacity: 0.6;
+    }
+
+    .price {
+      h2 {
+        font-size: 4rem;
+        letter-spacing: 0.41rem;
+        text-transform: uppercase;
+      }
+
+      p {
+        margin-top: 0rem;
+      }
+    }
+
+    a {
+      padding: 1.5rem;
+      background-color: white;
+      color: black;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      width: 100%;
+    }
+
+    @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
+      gap-row: 1rem;
+      min-height: 27rem;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      align-self: center;
+      padding-inline: 5rem;
+      justify-items: end;
+
+      h2,
+      p {
+        text-align: start;
+      }
+
+      .price {
+        p {
+          text-align: end;
+          padding-right: 0.5rem;
+        }
+      }
+    }
+
+    @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+      gap-row: 1rem;
+      min-height: 47rem;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      align-self: center;
+      padding-inline: 5rem;
+      justify-items: center;
+
+      h2,
+      p {
+        text-align: center;
+      }
+
+      .price {
+        p {
+          text-align: center;
+          padding-right: 0;
+        }
       }
     }
   }

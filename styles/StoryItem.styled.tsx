@@ -61,10 +61,21 @@ const StoryItemStyle: any = styled.div`
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     height: 50rem;
     background-size: fill;
+    position: relative;
 
     &:hover {
       cursor: pointer;
       transform: translateY(-2rem);
+
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: -.6rem;
+        background-image: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+        height: .6rem;
+        width: 100%;
+
+      }
     }
   }
 
