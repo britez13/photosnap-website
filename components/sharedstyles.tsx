@@ -130,6 +130,23 @@ const SharedHeroStyle = styled.section`
   .info {
     background-color: ${({ theme }) => theme.colors.black};
     min-height: 30rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 36%;
+      display: block;
+      width: 0.6rem;
+      height: 14.4rem;
+      background-image: linear-gradient(
+        26.57deg,
+        #ffc593 0%,
+        #bc7198 43.29%,
+        #5a77ff 83.33%
+      );
+    }
   }
 
   .wrapper {
@@ -140,7 +157,6 @@ const SharedHeroStyle = styled.section`
     gap: 2rem;
     padding-inline: auto;
   }
-
 
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     grid-template-columns: repeat(3, 1fr);
@@ -159,8 +175,6 @@ const SharedHeroStyle = styled.section`
     .wrapper {
       max-width: 38.7rem;
     }
-
-
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
@@ -189,6 +203,23 @@ const BetaSectionStyle = styled.section`
   justify-content: center;
   gap: 2rem;
   padding-inline: 2rem;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: block;
+    width: 0.6rem;
+    background-image: linear-gradient(
+      26.57deg,
+      #ffc593 0%,
+      #bc7198 43.29%,
+      #5a77ff 83.33%
+    );
+  }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     height: 28rem;

@@ -11,6 +11,18 @@ const HomeHeroStyle = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      display: block;
+      width: 0.6rem;
+      height: 30.4rem;
+      background-image: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+    }
+
   }
 
   .hero {

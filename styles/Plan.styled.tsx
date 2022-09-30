@@ -17,6 +17,14 @@ const PlanStyle = styled.section`
     justify-content: center;
     align-items: center;
     gap: 3rem;
+
+    .monthly {
+      color: ${(props) => (props.isYearly ? "gray" : "black")};
+    }
+
+    .yearly {
+      color: ${(props) => (props.isYearly ? "black" : " gray")};
+    }
   }
 
   .toggle {
@@ -172,6 +180,22 @@ const PlanStyle = styled.section`
     gap: 3rem;
     padding-inline: 2rem;
     color: white;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      display: block;
+      height: 0.6rem;
+      background-image: linear-gradient(
+        26.57deg,
+        #ffc593 0%,
+        #bc7198 43.29%,
+        #5a77ff 83.33%
+      );
+    }
 
     h2,
     p {
