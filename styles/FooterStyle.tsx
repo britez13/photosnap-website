@@ -2,19 +2,24 @@ import styled from "styled-components";
 
 const FooterStyle = styled.footer`
   background-color: black;
-  height: 40rem;
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  div {
-    background-image: url("../assets/shared/desktop/instagram.svg");
-    background-repeat: no-repeat;
-    width: 2rem;
-    height: 2rem;
-    /* background-color: red; */
-
-    &:hover {
-      background-image: url("../assets/shared/desktop/facebook-white.svg");
-    }
+  .wrapper {
+    width: min(90%, 110.4rem);
+    height: 12.2rem;
+    display: flex;
+    justify-content: space-between;
   }
+
+  .links {
+    display: flex;
+    gap: 4rem;
+  }
+  
+
 `;
 
 export default FooterStyle;
