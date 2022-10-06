@@ -13,7 +13,7 @@ const Footer = () => {
           <div>
             <Image src={logo} width='170px' height='16px' />
           </div>
-          <div>
+         
             <ul>
               <li>
                 <Link href='/'>
@@ -36,7 +36,7 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-          </div>
+         
         </div>
         <div>
           <a>Get an invite</a>

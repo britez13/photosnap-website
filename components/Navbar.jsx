@@ -1,9 +1,9 @@
 import Link from "next/link";
 import NavbarStyle from "../styles/Navbar.styled";
 
-const Navbar = () => {
+const Navbar = ({openNav}) => {
   return (
-    <NavbarStyle>
+    <NavbarStyle className={openNav ? "active" : ""}>
       <ul>
         <li>
           <Link href='/stories'>
@@ -21,6 +21,7 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
+      <a className='invite-button'>Get an invite</a>
     </NavbarStyle>
   );
 };

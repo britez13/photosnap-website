@@ -17,9 +17,21 @@ const FooterStyle = styled.footer`
   .links {
     display: flex;
     gap: 4rem;
-  }
-  
 
+    ul {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      a {
+        font-size: 1.2rem;
+        letter-spacing: 0.2rem;
+        text-transform: uppercase;
+      }
+    }
+  }
 `;
 
 export default FooterStyle;
