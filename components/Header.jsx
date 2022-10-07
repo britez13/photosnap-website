@@ -12,26 +12,29 @@ const Header = () => {
   const [openNav, setOpenNav] = useState(false)
 
   const handleClick = () => {
-    console.log(openNav);
     setOpenNav(!openNav)
   }
+
+   const handleClickLogo = () => {
+     setOpenNav(false);
+   };
 
 
   return (
     <HeaderStyle>
       <Link href='/'>
-        <a>
+        <a onClick={handleClickLogo}>
           <Image src={logo} alt='Photosnap logo' objectFit='cover' />
         </a>
       </Link>
-      <Navbar openNav={openNav}></Navbar>
+      <Navbar openNav={openNav} setOpenNav={setOpenNav}></Navbar>
       <a className='invite-button'>Get an invite</a>
 
       <div onClick={handleClick} className='burger-menu'>
         <div className={openNav ? "top active" : "top"}></div>
-
         <div className={openNav ? "bottom active" : "bottom"}></div>
       </div>
+      {/* <div className={openNav ? "overlay active" : "overlay"}></div> */}
     </HeaderStyle>
   );
 };

@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { DataContext } from "../pages/_app";
+import ArrowWhite from "./ArrowWhite";
 import { BetaSectionStyle, ButtonWhite, Title } from "./sharedstyles";
 
 const BetaSection = () => {
@@ -10,7 +11,10 @@ const BetaSection = () => {
       <div className='wrapper'>
         <Title>{beta.title}</Title>
       </div>
-      <ButtonWhite>Get an invite</ButtonWhite>
+      <a>
+        <span>Get an invite</span>
+        <ArrowWhite />
+      </a>
     </BetaSectionStyle>
   );
 };

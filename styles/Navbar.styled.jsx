@@ -18,35 +18,72 @@ const NavbarStyle = styled.nav`
     }
   }
 
-  .invite-button {
+  a.invite-button {
     display: none;
+    width: 0;
+    height: 0;
   }
 
-  @media (max-width: 499px) {
-    /* display: none; */
-    height: 0;
-    transform: translateY(-10%);
-    opacity: 0;
-    width: 0;
+  @media (max-width: 49.9rem) {
+    /* display: block; */
+    position: absolute;
+    height: 0rem;
+    /* transform: scaleY(0); */
+    z-index: 4;
+    width: 100%;
     overflow: hidden;
+    left: 0;
+    top: 7.1rem;
+    padding-inline: 2rem;
+
+    transition-property: height;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    background-color: white;
+
+    ul {
+      margin-top: 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      border-bottom: 1px solid grey;
+      margin-inline: auto;
+      max-width: 40rem;
+
+      li:last-of-type {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .invite-button {
+      display: block !important;
+      text-align: center;
+      margin-top: 2rem;
+      margin-inline: auto;
+      width: min(100%, 40rem);
+      height: 3.5rem;
+      background-color: black;
+    }
 
     &.active {
       display: block;
       position: absolute;
-      z-index: 3;
+      z-index: 4;
       left: 0;
       top: 7.1rem;
       background-color: white;
       width: 100%;
       height: 25.3rem;
-      opacity: 1;
+      /* opacity: 1; */
       padding-inline: 2rem;
-      transform: translateY(0);
-      transition-property: height, opacity;
-      transition-duration: 0.7s;
-      transition-timing-function: ease-in-out;
+      /* transform: scaleY(1); */
+      /* transition-property: height, opacity;
+      transition-duration: 0.5s;
+      transition-timing-function: ease-in-out; */
 
-      ul {
+      /* ul {
         margin-top: 4rem;
         display: flex;
         flex-direction: column;
@@ -62,12 +99,13 @@ const NavbarStyle = styled.nav`
         }
       }
 
-      /* .invite-button {
+      .invite-button {
         display: block;
         text-align: center;
         margin-top: 2rem;
         margin-inline: auto;
-        max-width: 40rem;
+        width: min(100%, 40rem);
+        height: 3.5rem;
       } */
     }
   }

@@ -150,7 +150,7 @@ const theme: any = {
       date: "April 7th 2020",
       title: "World Tour 2019",
       author: "Timothy Wagner",
-      arrow: "/assets/shared/desktop/arrow.svg",
+      arrow: "/assets/shared/desktop/arroww.svg",
     },
 
     {

@@ -37,6 +37,21 @@ const StoriesHeroStyle = styled.section`
         font-size: 1.3rem;
       }
     }
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+
+      span {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        letter-spacing: 0.2rem;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+    }
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {

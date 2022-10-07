@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { DataContext } from "../pages/_app";
 import StoriesHeroStyle from "../styles/StoriesHero.styled";
+import ArrowWhite from "./ArrowWhite";
 import { ButtonWhite, Description, Title } from "./sharedstyles";
 
 const StoriesHero = () => {
@@ -18,7 +19,10 @@ const StoriesHero = () => {
           <p>by {hero.author}</p>
         </div>
         <Description>{hero.description}</Description>
-        <ButtonWhite>Read the story</ButtonWhite>
+        <a>
+          <span>Read the story</span>
+          <ArrowWhite />
+        </a>
       </div>
     </StoriesHeroStyle>
   );

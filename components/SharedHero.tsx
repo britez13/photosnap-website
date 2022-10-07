@@ -1,8 +1,6 @@
+import { Description, SharedHeroStyle, Title } from "./sharedstyles";
 
-import { Description, SharedHeroStyle, Title } from "./sharedstyles"
-
-const SharedHero = ({heroInfo}) => {
-
+const SharedHero = ({ heroInfo }) => {
   return (
     <SharedHeroStyle images={heroInfo.images}>
       <div className='hero'></div>
@@ -14,7 +12,6 @@ const SharedHero = ({heroInfo}) => {
       </div>
     </SharedHeroStyle>
   );
-}
+};
 
-export default SharedHero
-
+export default SharedHero;

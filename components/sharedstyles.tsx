@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const Container = styled.div`
   padding: 0 0.5rem;
@@ -8,7 +8,7 @@ const Container = styled.div`
   align-items: center;
   height: 100vh;
   min-height: 100vh;
-`
+`;
 const Main = styled.main`
   padding: 5rem 0;
   flex: 1;
@@ -16,7 +16,7 @@ const Main = styled.main`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-`
+`;
 
 // const Title = styled.h1`
 //   margin: 0;
@@ -42,11 +42,7 @@ const Main = styled.main`
 //   font-size: 1.5rem;
 // `
 
-const Wrapper = styled.div`
-  
-`
-
-
+const Wrapper = styled.div``;
 
 const Button = styled.a`
   font-size: 1.2rem;
@@ -60,15 +56,13 @@ const Button = styled.a`
   cursor: pointer;
 `;
 
-
 const ButtonWhite = styled.a`
   color: ${({ theme }) => theme.colors.white};
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
-`; 
-
+`;
 
 const Title = styled.h1`
   font-size: 3.2rem;
@@ -82,7 +76,6 @@ const Title = styled.h1`
     letter-spacing: 0.417rem;
     line-height: 4.8rem;
   }
-
 `;
 
 const TitleBlack = styled.h2`
@@ -105,7 +98,6 @@ const Description = styled.p`
   color: ${({ theme }) => theme.colors.white};
   mix-blend-mode: normal;
   opacity: 0.6;
-
 `;
 
 const DescriptionBlack = styled.p`
@@ -135,11 +127,11 @@ const SharedHeroStyle = styled.section`
     &::before {
       content: "";
       position: absolute;
-      left: 0;
-      top: 36%;
+      left: 2.5rem;
+      top: 0;
       display: block;
-      width: 0.6rem;
-      height: 14.4rem;
+      width: 12.8rem;
+      height: 0.4rem;
       background-image: linear-gradient(
         26.57deg,
         #ffc593 0%,
@@ -155,7 +147,7 @@ const SharedHeroStyle = styled.section`
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
-    padding-inline: auto;
+    padding-inline: 2.5rem;
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
@@ -170,6 +162,22 @@ const SharedHeroStyle = styled.section`
     .info {
       grid-column: 1/3;
       grid-row: 1/2;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 36%;
+        display: block;
+        width: 0.6rem;
+        height: 14.4rem;
+        background-image: linear-gradient(
+          26.57deg,
+          #ffc593 0%,
+          #bc7198 43.29%,
+          #5a77ff 83.33%
+        );
+      }
     }
 
     .wrapper {
@@ -190,7 +198,7 @@ const SharedHeroStyle = styled.section`
       padding-left: 9rem;
     }
   }
-`; 
+`;
 
 const BetaSectionStyle = styled.section`
   height: 28.8rem;
@@ -208,11 +216,11 @@ const BetaSectionStyle = styled.section`
   &::before {
     content: "";
     position: absolute;
-    left: 0;
+    left: 2.5rem;
     top: 0;
-    bottom: 0;
     display: block;
-    width: 0.6rem;
+    width: 12.8rem;
+    height: 0.4rem;
     background-image: linear-gradient(
       26.57deg,
       #ffc593 0%,
@@ -229,6 +237,22 @@ const BetaSectionStyle = styled.section`
     align-items: center;
     padding-inline: 2.5rem;
 
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      display: block;
+      width: 0.6rem;
+      background-image: linear-gradient(
+        26.57deg,
+        #ffc593 0%,
+        #bc7198 43.29%,
+        #5a77ff 83.33%
+      );
+    }
+
     .wrapper {
       max-width: 40rem;
     }
@@ -240,5 +264,15 @@ const BetaSectionStyle = styled.section`
   }
 `;
 
-
-export { Container, Main, Title, TitleBlack, Description, DescriptionBlack, Button, ButtonWhite, SharedHeroStyle, BetaSectionStyle}
+export {
+  Container,
+  Main,
+  Title,
+  TitleBlack,
+  Description,
+  DescriptionBlack,
+  Button,
+  ButtonWhite,
+  SharedHeroStyle,
+  BetaSectionStyle,
+};

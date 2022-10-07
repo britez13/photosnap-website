@@ -1,5 +1,6 @@
 import Image from "next/image";
 import StoryItemStyle from "../styles/StoryItem.styled";
+import ArrowWhite from "./ArrowWhite";
 
 const StoryItem: any = ({ story }) => {
   return (
@@ -14,7 +15,7 @@ const StoryItem: any = ({ story }) => {
               <span>Read story</span>
             </a>
             <a>
-              <img src={story.arrow} width="50px" height="20px" alt="arrow" />
+              <ArrowWhite />
             </a>
           </div>
         </div>

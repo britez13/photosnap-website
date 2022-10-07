@@ -62,6 +62,7 @@ const StoryItemStyle: any = styled.div`
     height: 50rem;
     background-size: fill;
     position: relative;
+    transition: transform .2s ease-out;
 
     &:hover {
       cursor: pointer;

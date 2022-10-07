@@ -17,6 +17,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'DM Sans', sans-serif;
     width: min(100%, 144rem);
     margin-inline: auto;
+    overflow-x: hidden;
   }
 
   a {

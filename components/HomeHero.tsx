@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { DataContext } from "../pages/_app";
 import HomeHeroStyle from "../styles/HomeHero.styled";
 import { Description, Title } from "./sharedstyles";
+import ArrowWhite from "./ArrowWhite";
 
 const HomeHero = () => {
 
@@ -14,6 +15,7 @@ const HomeHero = () => {
         <div>
           <Title>{hero.title}</Title>
           <Description>{hero.description}</Description>
+          <a>Get an invite <ArrowWhite/> </a>
         </div>
       </div>
       <div className='hero'></div>

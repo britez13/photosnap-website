@@ -16,7 +16,7 @@ const FooterStyle = styled.footer`
 
   .links {
     display: flex;
-    gap: 4rem;
+    gap: 10rem;
 
     ul {
       height: 100%;
@@ -30,6 +30,19 @@ const FooterStyle = styled.footer`
         letter-spacing: 0.2rem;
         text-transform: uppercase;
       }
+    }
+  }
+
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    a {
+      font-size: 1.2rem;
+      letter-spacing: 0.2rem;
+      text-transform: uppercase;
     }
   }
 `;
