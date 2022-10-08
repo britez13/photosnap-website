@@ -15,6 +15,6 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "styles/StoryItem.styled.tsx", "components/StoryItem.tsx", "components/StoriesHero.jsx", "components/HomeHero.jsx", "components/HomeHero.jsx", "components/Grid2.jsx", "components/Grid1.jsx", "components/FeatureItem.jsx", "pages/_app.jsx", "pages/pricing.jsx", "pages/index.jsx", "components/BetaSection.jsx", "data.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "styles/StoryItem.styled.tsx", "components/StoryItem.tsx", "components/sharedstyles.jsx", "components/StoriesHero.jsx", "components/HomeHero.jsx", "components/HomeHero.jsx", "components/Grid2.jsx", "components/Grid1.jsx", "components/FeatureItem.jsx", "pages/_app.jsx", "pages/pricing.jsx", "pages/index.jsx", "components/BetaSection.jsx", "data.js"],
   "exclude": ["node_modules"]
 }
