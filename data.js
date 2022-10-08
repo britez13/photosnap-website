@@ -1,4 +1,288 @@
-export const data: any = {
+// import { StringifyOptions } from "querystring";
+
+// export type Data = {
+//   homeHero: {
+//     images: {
+//       mobile: string;
+//       tablet: string;
+//       desktop: string;
+//     };
+//     title: string;
+//     description: string;
+//   };
+
+//   homeGrid: [
+//     {
+//       images: {
+//         mobile: string;
+//         tablet: string;
+//         desktop: string;
+//       };
+
+//       title: string;
+//       description: string;
+//     },
+//     {
+//       images: {
+//         mobile: string;
+//         tablet: string;
+//         desktop: string;
+//       };
+
+//       title: string;
+//       description: string;
+//     }
+//   ];
+
+//   storiesHero: [
+//     {
+//       images: {
+//         mobile: string;
+//         tablet: string;
+//         desktop: string;
+//       };
+
+//       subtitle: string;
+//       title: string;
+//       date: string;
+//       author: string;
+//       description: string;
+//     }
+//   ];
+
+//   sharedHero: [
+//     {
+//       images: {
+//         mobile: string;
+//         tablet: string;
+//         desktop: string;
+//       };
+
+//       title: string;
+//       description: string;
+//     },
+
+//     {
+//       images: {
+//         mobile: string;
+//         tablet: string;
+//         desktop: string;
+//       };
+
+//       title: string;
+//       description: string;
+//     }
+//   ];
+
+//   stories: [
+//     {
+//       images: {
+//         mobile: string;
+//         desktop: string;
+//       };
+//       date: string;
+//       title: string;
+//       author: string;
+//     },
+//     {
+//       images: {
+//         mobile: string;
+//         desktop: string;
+//       };
+//       date: string;
+//       title: string;
+//       author: string;
+//     },
+//     {
+//       images: {
+//         mobile: string;
+//         desktop: string;
+//       };
+//       date: string;
+//       title: string;
+//       author: string;
+//     },
+
+//     {
+//       images: {
+//         mobile: string;
+//         desktop: string;
+//       };
+//       date: string;
+//       title: string;
+//       author: string;
+//     },
+
+//     {
+//       images: {
+//         mobile: string;
+//         desktop: string;
+//       };
+//       date: string;
+//       title: string;
+//       author: string;
+//     },
+
+//     {
+//       images: {
+//         mobile: string;
+//         desktop: string;
+//       };
+//       date: string;
+//       title: string;
+//       author: string;
+//     },
+
+//     {
+//       images: {
+//         mobile: string;
+//         desktop: string;
+//       };
+//       date: string;
+//       title: string;
+//       author: string;
+//     },
+
+//     {
+//       images: {
+//         mobile: string;
+//         desktop: string;
+//       };
+//       date: string;
+//       title: string;
+//       author: string;
+//     },
+
+//     {
+//       images: {
+//         mobile: string;
+//         desktop: string;
+//       };
+//       date: string;
+//       title: string;
+//       author: string;
+//     },
+
+//     {
+//       images: {
+//         mobile: string;
+//         desktop: string;
+//       };
+//       date: string;
+//       title: string;
+//       author: string;
+//     },
+
+//     {
+//       images: {
+//         mobile: string;
+//         desktop: string;
+//       };
+//       date: string;
+//       title: string;
+//       author: string;
+//     },
+
+//     {
+//       images: {
+//         mobile: string;
+//         desktop: string;
+//       };
+//       date: string;
+//       title: string;
+//       author: string;
+//     },
+
+//     {
+//       images: {
+//         mobile: string;
+//         desktop: string;
+//       };
+//       date: string;
+//       title: string;
+//       author: string;
+//     },
+
+//     {
+//       images: {
+//         mobile: string;
+//         desktop: string;
+//       };
+//       date: string;
+//       title: string;
+//       author: string;
+//     },
+
+//     {
+//       images: {
+//         mobile: string;
+//         desktop: string;
+//       };
+//       date: string;
+//       title: string;
+//       author: string;
+//     },
+
+//     {
+//       images: {
+//         mobile: string;
+//         desktop: string;
+//       };
+//       date: string;
+//       title: string;
+//       author: string;
+//     }
+//   ];
+
+//   features: [
+//     {
+//       image: string;
+//       title: string;
+//       description: string;
+//     },
+//     {
+//       image: string;
+//       title: string;
+//       description: string;
+//     },
+//     {
+//       image: string;
+//       title: string;
+//       description: string;
+//     },
+
+//     {
+//       image: string;
+//       title: string;
+//       description: string;
+//     },
+
+//     {
+//       image: string;
+//       title: string;
+//       description: string;
+//     },
+
+//     {
+//       image: string;
+//       title: string;
+//       description: string;
+//     }
+//   ];
+
+//   betaSection: [
+//     {
+//       images: {
+//         mobile: string;
+//         tablet: string;
+//         desktop: string;
+//       };
+//       title: string;
+//     }
+//   ];
+// };
+
+export const data = {
   homeHero: {
     images: {
       mobile: "/assets/home/mobile/create-and-share.jpg",

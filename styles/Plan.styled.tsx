@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const PlanStyle = styled.section`
+const PlanStyle: any = styled.section`
   max-width: min(90%, 110rem);
   margin-inline: auto;
   margin-block: 5rem;

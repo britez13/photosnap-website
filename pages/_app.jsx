@@ -1,4 +1,4 @@
-import type { AppProps } from "next/app";
+// import type { AppProps } from "next/app";
 import { createContext } from "react";
 import { ThemeProvider } from "styled-components";
 import Layout from "../components/Layout";
@@ -6,8 +6,9 @@ import Header from "../components/Header";
 import GlobalStyle from "../components/globalstyles";
 import Footer from "../components/Footer";
 import { data } from "../data";
+// import { Data } from "../data";
 
-const theme:any = {
+const theme = {
   colors: {
     black: "#000",
     white: "#fff",
@@ -20,12 +21,11 @@ const theme:any = {
   },
 };
 
-
 export const DataContext = createContext([]);
 
 const value = data;
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }) {
   return (
     <>
       <DataContext.Provider value={value}>

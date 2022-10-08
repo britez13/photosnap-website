@@ -108,7 +108,7 @@ const DescriptionBlack = styled.p`
   opacity: 0.6;
 `;
 
-const SharedHeroStyle = styled.section`
+const SharedHeroStyle: any = styled.section`
   display: grid;
   grid-template-columns: 1fr;
 

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const HomeHeroStyle = styled.section`
+const HomeHeroStyle: any = styled.section`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto);

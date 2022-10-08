@@ -1,5 +1,5 @@
 import Image from "next/image";
-import FooterStyle from "../styles/FooterStyle";
+import FooterStyle from "../styles/Footer.styled";
 import logo from "../assets/shared/desktop/logo-white.svg";
 import facebook from "../assets/shared/desktop/facebook.svg";
 import instagram from "../assets/shared/desktop/instagram.svg";
