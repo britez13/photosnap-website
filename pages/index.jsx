@@ -1,11 +1,4 @@
 import Head from "next/head";
-import {
-  Container,
-  Main,
-  Title,
-  Description,
-} from "../components/sharedstyles";
-import Cards from "../components/cards";
 import StoriesList from "../components/StoriesList";
 import FeaturesList from "../components/FeaturesList";
 import HomeHero from "../components/HomeHero";
