@@ -5,6 +5,7 @@ import Grid1 from "./Grid1";
 import Grid2 from "./Grid2";
 
 const HomeGrid = ({homeGrid}) => {
+  console.log(homeGrid);
   
   return (
     <HomeGridStyle>

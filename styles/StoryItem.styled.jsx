@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StoryItemStyle: any = styled.div`
+const StoryItemStyle = styled.div`
   background-image: ${(props) => `url(${props.images.mobile})`};
   background-repeat: no-repeat;
   background-size: cover;
