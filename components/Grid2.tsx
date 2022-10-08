@@ -1,4 +1,6 @@
+import Image from "next/image";
 import styled from "styled-components";
+import arrow from "../assets/shared/desktop/arrow.svg";
 import { DescriptionBlack, TitleBlack } from "./sharedstyles";
 
 const Grid2 = ({ gridInfo }) => {
@@ -8,6 +10,10 @@ const Grid2 = ({ gridInfo }) => {
       <div className='info'>
         <TitleBlack>{gridInfo.title}</TitleBlack>
         <DescriptionBlack>{gridInfo.description}</DescriptionBlack>
+        <a>
+          <span>View the stories</span>
+          <Image src={arrow} width='42px' height='12px' />
+        </a>
       </div>
     </Grid2Style>
   );
@@ -30,9 +36,25 @@ const Grid2Style = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 2rem;
     padding-inline: 2.5rem;
+
+    a {
+      margin-top: 3rem;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      span {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        color: black;
+        text-align: left;
+        font-weight: 700;
+      }
+    }
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {

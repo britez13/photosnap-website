@@ -8,7 +8,7 @@ const NavbarStyle = styled.nav`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 3rem;
 
     & a {
       font-size: 1.2rem;
@@ -24,7 +24,7 @@ const NavbarStyle = styled.nav`
     height: 0;
   }
 
-  @media (max-width: 49.9rem) {
+  @media (max-width: 499px) {
     /* display: block; */
     position: absolute;
     height: 0rem;
@@ -47,7 +47,7 @@ const NavbarStyle = styled.nav`
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 3rem;
+      gap: 2.5rem;
       border-bottom: 1px solid grey;
       margin-inline: auto;
       max-width: 40rem;
@@ -57,14 +57,20 @@ const NavbarStyle = styled.nav`
       }
     }
 
-    .invite-button {
-      display: block !important;
+    a.invite-button {
+      display: block;
       text-align: center;
       margin-top: 2rem;
       margin-inline: auto;
       width: min(100%, 40rem);
-      height: 3.5rem;
+      padding-block: 2.4rem;
       background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      
+      
     }
 
     &.active {

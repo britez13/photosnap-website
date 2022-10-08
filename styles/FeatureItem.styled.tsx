@@ -6,10 +6,7 @@ const FeatureItemStyle = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-
-  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
-    justify-content: flex-start;
-  }
+  margin-bottom: 5rem;
 
   img {
     width: 7rem;
@@ -29,7 +26,15 @@ const FeatureItemStyle = styled.div`
     color: ${({ theme }) => theme.colors.black};
     mix-blend-mode: normal;
     opacity: 0.6;
-    line-height: 25px;
+    line-height: 2.5rem;
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    justify-content: flex-start;
   }
 `;
 

@@ -28,7 +28,9 @@ const Navbar = ({openNav, setOpenNav}) => {
           </Link>
         </li>
       </ul>
-      <a className='invite-button'>Get an invite</a>
+      <a className='invite-button'>
+        <span>Get an invite</span>
+      </a>
     </NavbarStyle>
   );
 };

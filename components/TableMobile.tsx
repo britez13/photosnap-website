@@ -1,39 +1,155 @@
-import Image from "next/image"
-import check from "../assets/pricing/desktop/check.svg"
-import TableMobileStyle from "../styles/TableMobile.styled"
+import Image from "next/image";
+import check from "../assets/pricing/desktop/check.svg";
+import TableMobileStyle from "../styles/TableMobile.styled";
 
 const TableMobile = () => {
   return (
     <TableMobileStyle>
-      <table>
-        <tr>
-          <th>The features</th>
-        </tr>
-        <tr>
-          <tr>Unlimited story posting</tr>
-          <td>
-            <th>Basic</th>
-            <Image src={check} />
-          </td>
-          <td>
-            <th>Pro</th>
-            <Image src={check} />
-          </td>
-          <td>
-            <th>Business</th>
-            <Image src={check} />
-          </td>
-        </tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-      </table>
+      <div>
+        <h3 className='subtitle'>The features</h3>
+      
+          <div className='wrapper'>
+            <h3>Unlimited story posting</h3>
+            <div className='item'>
+              <div>
+                <p>Basic</p>
+                <Image src={check} />
+              </div>
+              <div>
+                <p>Pro</p>
+                <Image src={check} />
+              </div>
+              <div>
+                <p>Business</p>
+                <Image src={check} />
+              </div>
+            </div>
+          </div>
+          
+          <div className='wrapper'>
+            <h3>Unlimited photo upload</h3>
+              <div className='item'>
+                <div>
+                  <p>Basic</p>
+                  <Image src={check} />
+                </div>
+                <div>
+                  <p>Pro</p>
+                  <Image src={check} />
+                </div>
+                <div>
+                  <p>Business</p>
+                  <Image src={check} />
+                </div>
+              </div>
+            </div>
+
+            <div className='wrapper'>
+              <h3>Embedding custom content</h3>
+              <div>
+                <div className='item'>
+                  <div>
+                    <p>Basic</p>
+                    {/* <Image src={check} /> */}
+                  </div>
+                  <div>
+                    <p>Pro</p>
+                    <Image src={check} />
+                  </div>
+                  <div>
+                    <p>Business</p>
+                    <Image src={check} />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className='wrapper'>
+              <h3>Customize metadata</h3>
+              <div className='item'>
+                <div>
+                  <p>Basic</p>
+                  {/* <Image src={check} /> */}
+                </div>
+                <div>
+                  <p>Pro</p>
+                  <Image src={check} />
+                </div>
+                <div>
+                  <p>Business</p>
+                  <Image src={check} />
+                </div>
+              </div>
+            </div>
+
+            <div className='wrapper'>
+              <h3>Advanced metrics</h3>
+              <div className='item'>
+                <div>
+                  <p>Basic</p>
+                </div>
+                <div>
+                  <p>Pro</p>
+                </div>
+                <div>
+                  <p>Business</p>
+                  <Image src={check} />
+                </div>
+              </div>
+            </div>
+
+            <div className='wrapper'>
+              <h3>Photo downloads</h3>
+              <div className='item'>
+                <div>
+                  <p>Basic</p>
+                </div>
+                <div>
+                  <p>Pro</p>
+                </div>
+                <div>
+                  <p>Business</p>
+                  <Image src={check} />
+                </div>
+              </div>
+            </div>
+
+            <div className='wrapper'>
+              <h3>Search engine indexing</h3>
+              <div className='item'>
+                <div>
+                  <p>Basic</p>
+                </div>
+                <div>
+                  <p>Pro</p>
+                </div>
+                <div>
+                  <p>Business</p>
+                  <Image src={check} />
+                </div>
+              </div>
+            </div>
+
+            <div className='wrapper'>
+              <h3>Custom analytics</h3>
+              <div className='item'>
+                <div>
+                  <p>Basic</p>
+                </div>
+                <div>
+                  <p>Pro</p>
+                </div>
+                <div>
+                  <p>Business</p>
+                  <Image src={check} />
+                </div>
+              </div>
+            </div>
+            
+          {/* </div> */}
+        </div>
     </TableMobileStyle>
   );
-}
+};
 
-export default TableMobile
+export default TableMobile;

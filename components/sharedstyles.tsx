@@ -202,16 +202,34 @@ const SharedHeroStyle = styled.section`
 
 const BetaSectionStyle = styled.section`
   height: 28.8rem;
+  /* width: min(90%, 110.4rem); */
   background-image: ${(props) => `url(${props.images.mobile})`};
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 2rem;
-  padding-inline: 2rem;
   position: relative;
+
+  .container {
+    width: min(90%, 110.4rem);
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    height: 100%;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    span {
+      font-size: 1.2rem;
+      letter-spacing: 0.2rem;
+      text-transform: uppercase;
+    }
+  }
 
   &::before {
     content: "";
@@ -232,10 +250,17 @@ const BetaSectionStyle = styled.section`
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     height: 28rem;
     background-image: ${(props) => `url(${props.images.tablet})`};
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    padding-inline: 2.5rem;
+
+    .container {
+      width: min(90%, 110.4rem);
+      margin-inline: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0rem;
+    }
 
     &::before {
       content: "";
@@ -245,6 +270,7 @@ const BetaSectionStyle = styled.section`
       bottom: 0;
       display: block;
       width: 0.6rem;
+      height: 100%;
       background-image: linear-gradient(
         26.57deg,
         #ffc593 0%,
@@ -260,7 +286,7 @@ const BetaSectionStyle = styled.section`
 
   @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     background-image: ${(props) => `url(${props.images.desktop})`};
-    padding-inline: 10rem;
+    /* padding-inline: 10rem; */
   }
 `;
 

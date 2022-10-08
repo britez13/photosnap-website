@@ -1,8 +1,23 @@
 import styled from "styled-components";
 
 const TableStyle = styled.section`
+  display: none;
 
-    
+  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    display: block;
+    margin-block: 10rem;
+
+    h2 {
+      color: black;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 4rem;
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: 0.4rem;
+      margin-bottom: 3rem;
+    }
+
     table {
       width: min(90%, 73.1rem);
       margin-inline: auto;
@@ -12,7 +27,7 @@ const TableStyle = styled.section`
         border-bottom: 1px solid ${({ theme }) => theme.colors.grey};
       }
 
-      tr:first-of-type {
+      thead tr {
         border-bottom: 1px solid ${({ theme }) => theme.colors.black};
       }
     }
@@ -43,8 +58,7 @@ const TableStyle = styled.section`
       text-align: center;
       padding-left: 0;
     }
-  
+  }
 `;
 
 export default TableStyle;
-

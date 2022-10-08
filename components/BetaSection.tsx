@@ -8,13 +8,15 @@ const BetaSection = () => {
   const beta = value.betaSection[0];
   return (
     <BetaSectionStyle images={beta.images}>
-      <div className='wrapper'>
-        <Title>{beta.title}</Title>
+      <div className='container'>
+        <div className='wrapper'>
+          <Title>{beta.title}</Title>
+        </div>
+        <a>
+          <span>Get an invite</span>
+          <ArrowWhite />
+        </a>
       </div>
-      <a>
-        <span>Get an invite</span>
-        <ArrowWhite />
-      </a>
     </BetaSectionStyle>
   );
 };

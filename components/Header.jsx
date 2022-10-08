@@ -34,7 +34,6 @@ const Header = () => {
         <div className={openNav ? "top active" : "top"}></div>
         <div className={openNav ? "bottom active" : "bottom"}></div>
       </div>
-      {/* <div className={openNav ? "overlay active" : "overlay"}></div> */}
     </HeaderStyle>
   );
 };

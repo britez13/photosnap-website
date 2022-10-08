@@ -2,6 +2,7 @@ import { useContext } from "react";
 import BetaSection from "../components/BetaSection";
 import SharedHero from "../components/SharedHero";
 import Plan from "../components/Plan";
+import TableMobile from "../components/TableMobile";
 import Table from "../components/Table";
 import { DataContext } from "./_app";
 
@@ -13,7 +14,8 @@ const Pricing = () => {
     <>
       <SharedHero heroInfo={heroInfo} />
       <Plan />
-      {/* <Table /> */}
+      <TableMobile />
+      <Table />
       <BetaSection />
     </>
   );

@@ -39,17 +39,16 @@ const StoriesHeroStyle = styled.section`
     }
 
     a {
+      margin-top: 1rem;
       display: flex;
       align-items: center;
-      gap: 3rem;
+      gap: 2rem;
 
       span {
+        padding-bottom: .4rem;
         text-transform: uppercase;
         font-size: 1.2rem;
         letter-spacing: 0.2rem;
-        display: flex;
-        align-items: center;
-        gap: 2rem;
       }
     }
   }

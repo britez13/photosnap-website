@@ -17,8 +17,8 @@ const HeaderStyle = styled.header`
     text-transform: uppercase;
     background-color: black;
     color: white;
-    padding-block: 1rem;
-    padding-inline: 2rem;
+    padding-block: 1.3rem;
+    padding-inline: 2.35rem;
     letter-spacing: 0.2rem;
     cursor: pointer;
   }
@@ -50,24 +50,7 @@ const HeaderStyle = styled.header`
     }
   } 
 
-  .overlay {
-    position: absolute;
-    opacity: 0;
-    background-color: #000000b9;
-    transition: opacity 0.3s ease-in-out;
-
-    &.active {
-      z-index: 2;
-      top: 7.2rem;
-      bottom: 0%;
-      left: 0rem;
-      right: 0rem;
-      height: 600%;
-      opacity: 1;
-      overflow-y: hidden;
-    }
-  }
-
+  
   
 
   

@@ -15,6 +15,14 @@ const HomeHeroStyle = styled.section`
     justify-content: center;
     position: relative;
 
+    
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+
     &::before {
       content: "";
       position: absolute;
@@ -38,6 +46,7 @@ const HomeHeroStyle = styled.section`
       display: flex;
       align-items: center;
       gap: 2rem;
+      margin-top: 3rem;
     }
 
   }
@@ -77,8 +86,6 @@ const HomeHeroStyle = styled.section`
 
       div {
         max-width: 39.7rem;
-        display: flex;
-        flex-direction: column;
         gap: 2rem;
       }
     }
