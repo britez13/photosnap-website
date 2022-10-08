@@ -113,6 +113,12 @@ const FooterStyle = styled.footer`
           font-size: 1.2rem;
           letter-spacing: 0.2rem;
           text-transform: uppercase;
+          transition: opacity 0.3s ease;
+
+          &:hover {
+            mix-blend-mode: normal;
+            opacity: 0.3;
+          }
         }
       }
     }
@@ -134,18 +140,23 @@ const FooterStyle = styled.footer`
           font-size: 1.2rem;
           letter-spacing: 0.2rem;
           text-transform: uppercase;
+          transition: text-decoration 1s ease-in;
+          transition-delay: 0.3s;
+          cursor: pointer;
+
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
   }
 
-  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) { 
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     .links {
       gap: 10rem;
-    }    
+    }
   }
 `;
 
 export default FooterStyle;
-
-

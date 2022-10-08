@@ -54,6 +54,13 @@ const Grid1Style = styled.div`
         color: black;
         text-align: left;
         font-weight: 700;
+        transition: text-decoration .5s ease;
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
       }
     }
 

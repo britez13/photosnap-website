@@ -15,6 +15,12 @@ const NavbarStyle = styled.nav`
       font-weight: 700;
       letter-spacing: 0.2rem;
       text-transform: uppercase;
+      transition: opacity 0.3s ease;
+
+      &:hover {
+        mix-blend-mode: normal;
+        opacity: 0.3;
+      }
     }
   }
 
@@ -68,9 +74,12 @@ const NavbarStyle = styled.nav`
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: background-color 0.3s ease;
+      
+      &:hover {
+        background-color: #DFDFDF;
+      }  
 
-      
-      
     }
 
     &.active {

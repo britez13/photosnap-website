@@ -228,6 +228,12 @@ const BetaSectionStyle = styled.section`
       font-size: 1.2rem;
       letter-spacing: 0.2rem;
       text-transform: uppercase;
+      transition: text-decoration 1s ease-in;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 

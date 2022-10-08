@@ -15,7 +15,8 @@ const HomeHero = () => {
           <Title>{hero.title}</Title>
           <Description>{hero.description}</Description>
           <a>
-            Get an invite <ArrowWhite />{" "}
+            <span>Get an invite</span>
+            <ArrowWhite />
           </a>
         </div>
       </div>

@@ -21,6 +21,12 @@ const HeaderStyle = styled.header`
     padding-inline: 2.35rem;
     letter-spacing: 0.2rem;
     cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+
+    &:hover {
+      background-color: #dfdfdf;
+      color: black;
+    }
   }
 
   .burger-menu {
@@ -48,12 +54,7 @@ const HeaderStyle = styled.header`
     .bottom.active {
       transform: rotate(-45deg) translateY(-0.32rem);
     }
-  } 
-
-  
-  
-
-  
+  }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     .invite-button {
@@ -66,7 +67,7 @@ const HeaderStyle = styled.header`
 
     .overlay {
       display: none;
-    } 
+    }
   }
 `;
 

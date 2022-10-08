@@ -15,13 +15,11 @@ const HomeHeroStyle = styled.section`
     justify-content: center;
     position: relative;
 
-    
     div {
       display: flex;
       flex-direction: column;
       gap: 1rem;
     }
-
 
     &::before {
       content: "";
@@ -40,15 +38,23 @@ const HomeHeroStyle = styled.section`
     }
 
     a {
-      text-transform: uppercase;
-      font-size: 1.2rem;
-      letter-spacing: 0.2rem;
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-      margin-top: 3rem;
-    }
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 3rem;
 
+        span {
+          font-size: 1.2rem;
+          letter-spacing: 0.2rem;
+          text-transform: uppercase;
+          transition: text-decoration 1s ease-in;
+          cursor: pointer;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
   }
 
   .hero {
@@ -72,7 +78,7 @@ const HomeHeroStyle = styled.section`
         content: "";
         position: absolute;
         left: 0;
-        top: 18rem;
+        top: 17.5rem;
         display: block;
         width: 0.6rem;
         height: 30.4rem;

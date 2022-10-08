@@ -45,10 +45,16 @@ const StoriesHeroStyle = styled.section`
       gap: 2rem;
 
       span {
-        padding-bottom: .4rem;
+        padding-bottom: 0.4rem;
         text-transform: uppercase;
         font-size: 1.2rem;
         letter-spacing: 0.2rem;
+        transition: text-decoration 1s ease-in;
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }

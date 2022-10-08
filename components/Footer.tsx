@@ -16,17 +16,18 @@ const Footer = () => {
       <div className='wrapper'>
         <div className='links'>
           <div className='second-wrapper'>
-            {/* <a className='logo'>
-              <Link href='/'>
+            <Link href='/'>
+              <a>
                 <Image
                   src={logo}
                   width='170px'
                   height='16px'
                   objectFit='fill'
                 />
-              </Link>
-            </a> */}
-            {/* <ul className='social-media'>
+              </a>
+            </Link>
+
+            <ul className='social-media'>
               <li>
                 <a>
                   <Image src={facebook} width='20px' height='20px' />
@@ -52,7 +53,7 @@ const Footer = () => {
                   <Image src={instagram} width='20px' height='20px' />
                 </a>
               </li>
-            </ul> */}
+            </ul>
           </div>
           <ul>
             <li>

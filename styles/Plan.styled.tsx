@@ -79,7 +79,7 @@ const PlanStyle = styled.section`
   }
 
   .item {
-    background-color: ${({ theme }) => theme.colors.grey};
+    background-color: #f5f5f5;
     min-height: 40.7rem;
     display: grid;
     align-content: center;
@@ -124,6 +124,13 @@ const PlanStyle = styled.section`
       text-transform: uppercase;
       letter-spacing: 0.2rem;
       width: 100%;
+      transition: background-color 0.3s ease-in, color 0.3s ease-in;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #dfdfdf;
+        color: black;
+      }
     }
 
     @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
@@ -234,6 +241,12 @@ const PlanStyle = styled.section`
       text-transform: uppercase;
       letter-spacing: 0.2rem;
       width: 100%;
+      transition: background-color 0.3s ease-in;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #dfdfdf;
+      }
     }
 
     @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
