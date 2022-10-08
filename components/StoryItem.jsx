@@ -2,7 +2,7 @@ import Image from "next/image";
 import StoryItemStyle from "../styles/StoryItem.styled";
 import ArrowWhite from "./ArrowWhite";
 
-const StoryItem: any = ({ story }) => {
+const StoryItem = ({ story }) => {
   return (
     <StoryItemStyle images={story.images}>
       <div>

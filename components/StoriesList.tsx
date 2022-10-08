@@ -4,7 +4,7 @@ import { DataContext } from "../pages/_app";
 import StoriesListStyle from "../styles/StoriesList.styled";
 import StoryItem from "./StoryItem";
 
-const StoriesList: any = ({ stories }) => {
+const StoriesList = ({ stories }) => {
 
   return (
     <StoriesListStyle>
