@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useContext } from "react";
 import StoriesHero from "../components/StoriesHero";
 import StoriesList from "../components/StoriesList";
@@ -8,6 +9,10 @@ const Stories = () => {
   const stories = value.stories;
   return (
     <>
+      <Head>
+        <title>Photosnap Stories</title>
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
       <StoriesHero />
       <StoriesList stories={stories} />
     </>
