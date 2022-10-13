@@ -5,7 +5,6 @@ const Plan = () => {
   const [isYearly, setIsYearly] = useState(false);
 
   const handleClick = (e) => {
-    console.log(e.target.checked);
     setIsYearly(!isYearly);
   };
 
