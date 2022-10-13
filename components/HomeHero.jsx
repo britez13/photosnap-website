@@ -7,7 +7,6 @@ import ArrowWhite from "./ArrowWhite";
 const HomeHero = () => {
   const value = useContext(DataContext);
   const hero = value.homeHero;
-  console.log(hero);
   return (
     <HomeHeroStyle images={hero.images}>
       <div className='info'>

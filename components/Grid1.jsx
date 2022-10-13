@@ -4,7 +4,6 @@ import { DescriptionBlack, TitleBlack } from "./sharedstyles";
 import arrow from "../assets/shared/desktop/arrow.svg";
 
 const Grid1 = ({ gridInfo }) => {
-  console.log(gridInfo);
   return (
     <Grid1Style images={gridInfo.images}>
       <div className='image'></div>
